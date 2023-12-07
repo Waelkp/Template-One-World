@@ -1692,6 +1692,16 @@ footer .container .box:nth-child(3) .side p {
   text-wrap: pretty;
 }
 
+@media (max-width: 768px) {
+  footer .container .box:first-child {
+    text-align: center;
+  }
+  footer .container .box:nth-child(3) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 40px;
+  }
+}
 footer .container .box:last-child img {
   width: 75px;
   height: 75px;
